@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Loggin</title>
+	</head>
+	<body>
+	  <form action="" method=POST>
+	    Username:<input type='text' name='username'/><br>
+	    Password:<input type='password' name='password'/><br>
+	    <input type='submit'/>
+	  </form>
+	  <?php 
+	     $users = mysql_connect("localhost", "root", "goldenbear")
+	     or die(mysql_error());
+	     mysql_select_db("userstb", "$users");
+	     $sql = "SELECT * FROM userstb";
+	     $results mysql_query($sql, $users);
+	     while($row = mysql_fetch_array($result)) {
+	     echo $row['username'];
+	     }
+	 ?>
+	</body>
+</html>

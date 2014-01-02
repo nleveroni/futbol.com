@@ -1,0 +1,14 @@
+<!DOCTYPE html/>
+<heather></heather>
+<body>
+<form action="http://www.google.com/webhp">
+  <input name="q">
+  <input type="submit">
+  <input type='text' name='hi' value='Hi'>
+          <input type='text' name='hola' value='Hola'>
+	          <input type='radio'>Yes
+		          <input type='radio'>N   <br>
+				          <input type='checkbox'>Coke
+					          <input type='checkbox' checked>Sprite
+</form>
+</body>

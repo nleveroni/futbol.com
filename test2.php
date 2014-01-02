@@ -1,0 +1,19 @@
+<?php
+
+$users = mysql_connect("localhost", "root", "goldenbear") or die(mysql_error());
+mysql_select_db("users", $users);
+$sql = "CREATE TABLE users2db
+(
+ID int NOT NULL AUTO_INCREMENT,
+PRIMARY KEY(ID),
+Username varchar(20),
+Password varchar(20),
+First varchar(20),
+Last varchar(20)
+)
+";
+
+mysql_query($sql, $users);
+
+
+?>

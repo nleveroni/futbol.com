@@ -1,0 +1,14 @@
+<?php
+
+$accounts = mysql_connect("localhost", "root", "goldenbear")
+or die (mysql_error());
+
+mysql_select_db("users", $accounts);
+
+$sql = "
+INSERT INTO users2db
+";
+
+mysql_query($sql, $accounts);
+
+?>
